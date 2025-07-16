@@ -1,0 +1,29 @@
+.header {
+  padding: 40px 0;
+}
+
+.breadcrumbs {
+  font-size: 0.9rem;
+  color: #888;
+  margin: 0 0 8px 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.shopLayout {
+  display: grid;
+  grid-template-columns: 280px 1fr; /* Фіксована ширина для сайдбару */
+  gap: 40px;
+  padding-bottom: 60px;
+}
+
+/* Адаптивність для планшетів та мобільних */
+@media (max-width: 1024px) {
+  .shopLayout {
+    grid-template-columns: 1fr; /* Сайдбар переноситься над контентом */
+  }
+}

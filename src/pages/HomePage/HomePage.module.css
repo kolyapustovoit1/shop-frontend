@@ -1,0 +1,28 @@
+.hero {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: white; /* Змінимо колір тексту на білий для кращого контрасту */
+}
+
+.heroContent {
+  text-align: left;
+}
+
+.heroSubtitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.heroTitle {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 24px 0;
+  max-width: 500px;
+  line-height: 1.2;
+}

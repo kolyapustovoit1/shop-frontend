@@ -1,0 +1,56 @@
+.categoryBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.categoryLink {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.filtersTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.filterGroup {
+  border-bottom: 1px solid var(--border-color);
+  padding: 16px 0;
+}
+
+.filterTitle {
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none; /* Прибираємо стандартний маркер */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filterTitle::-webkit-details-marker {
+  display: none; /* Прибираємо стандартний маркер для Chrome */
+}
+
+/* Створюємо власну стрілку */
+.filterTitle::after {
+  content: '>';
+  font-size: 1.2rem;
+  transform: rotate(90deg);
+  transition: transform 0.2s;
+}
+
+.filterGroup[open] > .filterTitle::after {
+  transform: rotate(-90deg);
+}
+
+.filterContent {
+  padding-top: 16px;
+  color: #555;
+}

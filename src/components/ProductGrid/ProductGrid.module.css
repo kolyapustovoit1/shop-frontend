@@ -1,0 +1,47 @@
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.sorting {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sortLabel {
+  color: #555;
+}
+
+.select {
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

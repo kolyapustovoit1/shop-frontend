@@ -1,0 +1,31 @@
+.menuContainer {
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--border-color);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-in-out;
+}
+
+.menuContainer.open {
+  max-height: 500px; /* Велика висота, щоб вмістити всі посилання */
+}
+
+.navMobile {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.link {
+  padding: 15px 0;
+  font-size: 1.1rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+.activeLink {
+  color: var(--primary-color);
+}
